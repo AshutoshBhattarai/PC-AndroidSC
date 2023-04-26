@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Puja Connect</string>
+    <string name="nav_open">Open</string>
+    <string name="nav_close">Close</string>
+    <string name="pack_ins">* Please set the quantity to 0(zero) if you don\'t want or already have the product</string>
+    <string name="order_ins">* You will be contacted shortly after the order is placed to confirm the order or if you want to give extra instruction </string>
+    <string name="about_us">With everything going digital, we have come up with a lead where you can now get every puja equipment traditionally right on the tip of your fingers.</string>
+    <string name="baseURL">http://192.168.101.4:5000</string>
+    <string-array name="addresses">
+        <item>Kathmandu</item>
+    </string-array>
+</resources>

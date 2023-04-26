@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="350dp"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    android:layout_margin="10dp">
+
+    <EditText
+        android:id="@+id/etAddProdName"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="44dp"
+        android:background="@drawable/custom_bg_1"
+        android:ems="10"
+        android:fontFamily="@font/autour_one"
+        android:hint="Enter Name"
+        android:inputType="textPersonName"
+        android:padding="10dp"
+        android:textColor="@color/black"
+        android:textSize="13dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.8"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/etAddProdPrice"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="36dp"
+        android:background="@drawable/custom_bg_1"
+        android:ems="10"
+        android:fontFamily="@font/autour_one"
+        android:hint="Enter Price"
+        android:inputType="number"
+        android:maxLength="6"
+        android:padding="10dp"
+        android:textColor="@color/black"
+        android:textSize="13dp"
+        app:layout_constraintEnd_toEndOf="@+id/etAddProdName"
+        app:layout_constraintStart_toStartOf="@+id/etAddProdName"
+        app:layout_constraintTop_toBottomOf="@+id/etAddProdName" />
+
+    <EditText
+        android:id="@+id/etAddProdStock"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/custom_bg_1"
+        android:ems="10"
+        android:fontFamily="@font/autour_one"
+        android:hint="Enter Stock"
+        android:inputType="number"
+        android:maxLength="5"
+        android:padding="10dp"
+        android:textColor="@color/black"
+        android:textSize="13dp"
+        app:layout_constraintEnd_toEndOf="@+id/etAddProdPrice"
+        app:layout_constraintStart_toStartOf="@+id/etAddProdPrice"
+        app:layout_constraintTop_toBottomOf="@+id/etAddProdPrice" />
+
+    <EditText
+        android:id="@+id/etAddProdImg"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="48dp"
+        android:background="@drawable/custom_bg_1"
+        android:ems="10"
+        android:fontFamily="@font/autour_one"
+        android:hint="Enter Image Name/URL"
+        android:inputType="textPersonName"
+        android:padding="10dp"
+        android:textColor="@color/black"
+        android:textSize="13dp"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="@+id/etAddProdStock"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/etAddProdStock"
+        app:layout_constraintTop_toBottomOf="@+id/etAddProdStock" />
+
+    <Button
+        android:id="@+id/etAddProdImgbtn"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="64dp"
+        android:layout_marginEnd="40dp"
+        android:text="Select Image"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="@+id/etAddProdStock"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/etAddProdStock"
+        app:layout_constraintTop_toBottomOf="@+id/etAddProdStock" />
+
+    <TextView
+        android:id="@+id/textView32"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/autour_one"
+        android:padding="10dp"
+        android:text="Name"
+        android:textAlignment="center"
+        android:textColor="@color/primary"
+        android:textSize="15dp"
+        app:layout_constraintBottom_toTopOf="@+id/etAddProdName"
+        app:layout_constraintStart_toStartOf="@+id/etAddProdName" />
+
+    <TextView
+        android:id="@+id/textView33"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/autour_one"
+        android:padding="10dp"
+        android:text="Price"
+        android:textAlignment="center"
+        android:textColor="@color/primary"
+        android:textSize="15dp"
+        app:layout_constraintBottom_toTopOf="@+id/etAddProdPrice"
+        app:layout_constraintStart_toStartOf="@+id/etAddProdPrice" />
+
+    <TextView
+        android:id="@+id/textView34"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/autour_one"
+        android:padding="10dp"
+        android:text="Stock"
+        android:textAlignment="center"
+        android:textColor="@color/primary"
+        android:textSize="15dp"
+        app:layout_constraintBottom_toTopOf="@+id/etAddProdStock"
+        app:layout_constraintStart_toStartOf="@+id/etAddProdStock" />
+
+    <TextView
+        android:id="@+id/textView35"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:fontFamily="@font/autour_one"
+        android:padding="10dp"
+        android:text="Image"
+        android:textAlignment="center"
+        android:textColor="@color/primary"
+        android:textSize="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/etAddProdStock"
+        app:layout_constraintTop_toBottomOf="@+id/etAddProdStock"
+        app:layout_constraintVertical_bias="0.061" />
+
+    <Button
+        android:id="@+id/btnAddDisProduct"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="140dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/custom_bg_5"
+        android:fontFamily="@font/autour_one"
+        android:text="Add Product"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.458"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etAddProdStock"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/btntxtDeleteProd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="212dp"
+        android:text="Delete"
+        android:textColor="@color/primary"
+        android:textSize="16dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@+id/etAddProdName"
+        app:layout_constraintStart_toEndOf="@+id/textView32"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.181"
+        tools:visibility="visible" />
+</androidx.constraintlayout.widget.ConstraintLayout>
